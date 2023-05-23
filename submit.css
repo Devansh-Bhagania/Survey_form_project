@@ -1,0 +1,23 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    height:100vh;
+    background-color:rgb(231, 248, 228);
+    overflow: hidden;
+}
+
+.container{
+    height:60vh;
+    width:70vw;
+    background-color:transparent;
+    margin:120px auto;
+    border:8px solid green;
+}
+
+.thanku{
+    text-align:center;
+    font-size:80px;
+    color:green;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="surveystyle.css">
+    <title>Game Survey</title>
+</head>
+<body>
+    <div class="main">
+        <div class="former">
+            <form method="POST" name="google-sheet" action="submit.html">
+                <label for="Username"><strong>Name:</strong></label>
+                <input type="text" id="name" pattern="*[a-zA-Z]*" oninvalid="setCustomValidity('Please enter alphabets only')" name="Username" placeholder="Enter your name" required>
+                <br><br>
+                <label for="AccountName"><strong>In-game-ID:</strong></label>
+                <input type="telephone" id="AccountName" name="AccountName" pattern="*[0-9]*" oninvalid="setCustomValidity('Please enter numeric value only')" placeholder="Enter your ID" required>
+                <br><br>
+                <label for="Age"><strong>Age:</strong></label>
+                <input type="telephone" id="Age" placeholder="Enter Your Age" name="Age" min="1" max="100" required>
+                <br><br>
+                <label for="Email"><strong>Email:</strong></label>
+                <input type="email" id="Email" name="Email" placeholder="Enter Your Email" required>
+                <br><br>
+                <label for="Gender"><strong>Gender:</strong></label>
+                <input type="radio" name="Gender" id="Gender" value="Male" required> <b>Male</b> 
+                <input type="radio" name="Gender" id="Gender" value="Female"><b>Female</b>
+                <input type="radio" name="Gender" id="Gender" value="Other"><b>Other</b>
+                <br><br>
+                <h3>Did you like playing Call of Duty : Warzone?</h3>
+                <label for="Answer"></label>
+                <input type="radio" name="Answer" style="height: 15px;width: 15px;" id="Answer"required><b>Yes</b>
+                <input type="radio" name="Answer" style="height: 15px;width: 15px;" id="Answer"><b>No</b>
+                <input type="radio" name="Answer" style="height: 15px;width: 15px;" id="Answer"><b>Somewhat</b>
+                <br><br>
+                <h3>Were the instructions to play the game clear?</h3>
+                <label for="Answer2"></label>
+                <input type="radio" name="Answer2" style="height: 15px;width: 15px;" id="Answer2"required><b>Yes</b>
+                <input type="radio" name="Answer2" style="height: 15px;width: 15px;" id="Answer2"><b>No</b>
+                <input type="radio" name="Answer2" style="height: 15px;width: 15px;" id="Answer2"><b>Somewhat</b>
+                <br><br>
+                <h3>What is the difficulty of the game?</h3>
+                <label for="Answer3"></label>
+                <input type="radio" name="Answer3" style="height: 15px;width: 15px;" id="Answer3"required> <b>Easy</b>
+                <input type="radio" name="Answer3" style="height: 15px;width: 15px;" id="Answer3"> <b>Medium</b>
+                <input type="radio" name="Answer3" style="height: 15px;width: 15px;" id="Answer3"> <b>Hard</b>
+                <br><br>
+                <h3>Why do you play Call of Duty : Warzone</h3>
+                <label for="Answer6"></label>
+                <input type="radio" name="Answer6" style="height: 15px;width: 15px;size: 20px;" id="Answer6"required> <b>It helps me relieve stress</b>
+                <input type="radio" name="Answer6" style="height: 15px;width: 15px;" id="Answer6"> <b>I like playing games in my free time</b>
+                <input type="radio" name="Answer6" style="height: 15px;width: 15px;" id="Answer6"> <b>I am a pro gamer</b>
+                <br><br>
+                <h3>What do you like the most in the game</h3>
+                <label for="Answer4"></label>
+                <input type="radio" name="Answer4" style="height: 15px;width: 15px;" id="Answer4" required> <b>A wide variety of weapons to choose from</b>
+                <input type="radio" name="Answer4" style="height: 15px;width: 15px;" id="Answer4"> <b>The leaderboard system</b>
+                <input type="radio" name="Answer4" style="height: 15px;width: 15px;" id="Answer4"> <b>The variety of maps</b>
+                <input type="radio" name="Answer4" style="height: 15px;width: 15px;" id="Answer4"> <b>The realism of the game</b>
+                <br><br>
+                <h3>Did you face any bugs in the game?</h3>
+                <label for="Answer5"></label>
+                <input type="radio" name="Answer5" style="height: 15px;width: 15px;" id="answer5" required> <b>Yes</b>
+                <input type="radio" name="Answer5" style="height: 15px;width: 15px;" id="answer5"> <b>No</b>
+                <br>
+                <h3> On a scale of 1-5 how likely are you to recommend this game to your friends?</h3>
+                <label for="Feedback"></label>
+                <input type="radio" name="Feedback" style="height: 15px;width: 15px;" id="feedback"><b>5</b>
+                <input type="radio" name="Feedback" style="height: 15px;width: 15px;" id="feedback"><b>4</b>
+                <input type="radio" name="Feedback" style="height: 15px;width: 15px;" id="feedback"><b>3</b>
+                <input type="radio" name="Feedback" style="height: 15px;width: 15px;" id="feedback"><b>2</b>
+                <input type="radio" name="Feedback" style="height: 15px;width: 15px;" id="feedback"><b>1</b>
+                <br><br>
+                <h3>How would you rate our game?</h3>
+                <label for="Answer7"></label>
+                <input type="radio" name="Answer7" style="height: 15px;width: 15px;" id="answer7"><b>5</b>
+                <input type="radio" name="Answer7" style="height: 15px;width: 15px;" id="answer7"><b>4</b>
+                <input type="radio" name="Answer7" style="height: 15px;width: 15px;" id="answer7"><b>3</b>
+                <input type="radio" name="Answer7" style="height: 15px;width: 15px;" id="answer7"><b>2</b>
+                <input type="radio" name="Answer7" style="height: 15px;width: 15px;" id="answer7"><b>1</b>
+                <br><br>  
+                <h3>Is there anything that we could do to make the game more exciting to play?</h3>
+                <textarea name="Textarea" id="Textarea" cols="144" rows="15" maxlength="500" style="font-size:20px; width:1000px; height:300px;"></textarea>
+                <br>
+                <button class="myButton">
+                Submit
+                </button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwngYqAdfQmeTqnnKWxTcQFwjwv5lQ2TZBNAnNrJbXQ8MDTIWoBfLAXN45oNHFJbzAT/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+            if (window.confirm('If you click "ok" you would be redirected . '))  
+{ 
+    window.location.href='submit.html'; 
+    };         })
+        
+</script>
+</body>
+</html>
